@@ -37,7 +37,7 @@ public class UserController {
 	public User createUser(@RequestBody User user) {
 		return userService.createUser(user);
 	}
-	
+	// esto es un cambio de prueba
 	@GetMapping
 	public List<UserProyection> getUsers(){
 		return userService.getUsers().stream().map(user ->{
